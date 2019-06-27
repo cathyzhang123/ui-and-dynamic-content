@@ -1,0 +1,132 @@
+/*TABLE OF CONTENT
+1. import google fonts
+2. common setting
+3. masthead-image
+4. main-content
+5. footer section
+
+/*----------------------------------------
+1. import google fonts
+------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Domine|Roboto&display=swap');
+
+/*----------------------------------------
+2. common setting
+------------------------------------------*/
+body {    
+    font-family: 'Domine', 'Times New Roman', serif;
+}
+
+h1 {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+/*----------------------------------------
+3. masthead-image
+------------------------------------------*/
+/*define widget maximum width*/
+.container {
+    max-width: 45rem;
+}
+
+/*define widget background color*/
+.background {
+    width: 100%;
+    height: auto;
+    background-position: top;
+    text-align: center;
+    background-image: url("../img/wall.jpg");
+    background-repeat: repeat-y;
+    background-color: #e1ded1;
+    box-shadow: 2px 2px #ccc;
+    background-size: fill;
+}
+
+/*define shopping cart width*/
+.size {
+    max-width: 30%;
+    height: auto;
+}
+
+/*----------------------------------------
+4. main-content
+------------------------------------------*/
+/*define shopping list items*/
+#list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#list li {
+    position: relative;
+    padding-left: 90px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: solid 1px #FAEAC0;
+}
+
+#list li:last-child {
+    border-bottom: none;
+}
+
+#list li:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url('../img/shopping_list.png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 900;   
+}
+
+/*----------------------------------------
+5. footer section
+------------------------------------------*/
+/*define hr line inside list*/
+/*define hr line above footer*/
+.hr-style {
+    border: 1px solid #fff;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*define social media icon */
+.foot ul { 
+    padding: 0; 
+    margin: 0; 
+    text-align: center; 
+    padding-bottom: 40px;
+}
+
+.foot ul > li { 
+    display: inline-block; 
+    margin: 0 6.5px;
+}
+
+.foot ul > li > a { 
+    display: block; 
+    width: 42px; 
+    height: 42px; 
+    background-color: #bbbbbb; 
+    color: #FFF; 
+    line-height: 42px; 
+    font-size: 20px; 
+    border-radius: 100%; 
+    text-align: center;
+}
+
+.foot ul > li:hover a { 
+    background-color: #007bff;
+}
+
+
+
+
+
